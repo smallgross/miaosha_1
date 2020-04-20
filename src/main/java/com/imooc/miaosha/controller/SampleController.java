@@ -58,7 +58,11 @@ public class SampleController {
  		return Result.success(true);
  		
     }
-	
+	/**
+	 * redis
+	 * 
+	 * @return
+	 */
 	@RequestMapping("/redis/get")
     @ResponseBody
     public Result<Boolean> redisgGet() {
