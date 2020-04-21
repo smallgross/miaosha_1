@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.imooc.miaosha.domain.User;
 import com.imooc.miaosha.redis.RedisService;
@@ -14,7 +15,7 @@ import com.imooc.miaosha.result.CodeMsg;
 import com.imooc.miaosha.result.Result;
 import com.imooc.miaosha.service.UserService;
 
-@Controller
+@RestController
 @RequestMapping("/demo")
 public class SampleController {
 	@Autowired
@@ -64,10 +65,9 @@ public class SampleController {
 	 * @return
 	 */
 	@RequestMapping("/redis/get")
-    @ResponseBody
-    public Result<Boolean> redisgGet() {
-		redisService.get(String,Class<T>clazz);
- 		return Result.success(true);
+    public Result<Long> redisgGet() {
+		Long v1=redisService.get("key1",Long.class);
+ 		return Result.success(v1);
  		
     }
 }
