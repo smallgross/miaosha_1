@@ -1,5 +1,9 @@
 package com.imooc.miaosha.result;
-
+/**
+ * result
+ * @author luo
+ *
+ */
 public class CodeMsg {
 	private int code;
 	private String msg;

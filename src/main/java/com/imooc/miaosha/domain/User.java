@@ -1,5 +1,9 @@
 package com.imooc.miaosha.domain;
-
+/**
+ * 实体类
+ * @author luo
+ *
+ */
 public class User {
 	private int id;
 	private String name;
