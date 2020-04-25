@@ -24,17 +24,17 @@ public class SampleController {
 	RedisService redisService;
 	
 	@RequestMapping("/home")
-	@ResponseBody
+	
 	String home() {
 		return "heill word";
 	}
 	@RequestMapping("/hello")
-	 @ResponseBody
+	
 	public Result<String>hello(){
 		return Result.success("hello,imooc");
 	}
 	@RequestMapping("/helloError")
-    @ResponseBody
+    
     public Result<String> helloError() {
  		return Result.error(CodeMsg.SERVER_ERROR);
  		//return new Result(500102, "XXX");
@@ -45,7 +45,7 @@ public class SampleController {
  		return "hello";
     }
 	@RequestMapping("/db/get")
-    @ResponseBody
+   
     public Result<User> dbGet() {
 		User user=userservice.getById(1);
  		return Result.success(user);
@@ -53,7 +53,7 @@ public class SampleController {
     }
 	
 	@RequestMapping("/db/tx")
-    @ResponseBody
+    
     public Result<Boolean> dbTx() {
 		userservice.tx();
  		return Result.success(true);

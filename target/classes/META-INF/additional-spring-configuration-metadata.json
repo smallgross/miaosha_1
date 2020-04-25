@@ -1,0 +1,62 @@
+{"properties": [
+  {
+    "name": "spring.datasource.filters",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.filters'"
+  },
+  {
+    "name": "spring.datasource.maxActive",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.maxActive'"
+  },
+  {
+    "name": "spring.datasource.minIdle",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.minIdle'"
+  },
+  {
+    "name": "redis.host",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.host'"
+  },
+  {
+    "name": "redis.port",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.port'"
+  },
+  {
+    "name": "redis.timeout",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.timeout'"
+  },
+  {
+    "name": "redis.poolMaxTotal",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.poolMaxTotal'"
+  },
+  {
+    "name": "redis.poolMaxIdle",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.poolMaxIdle'"
+  },
+  {
+    "name": "redis.poolMaxWait",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.poolMaxWait'"
+  },
+  {
+    "name": "redis.poolMaxTotal",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.poolMaxTotal'"
+  },
+  {
+    "name": "redis.poolMaxTotal",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.poolMaxTotal'"
+  },
+  {
+    "name": "redis.poolMaxTotal",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.poolMaxTotal'"
+  }
+]}
